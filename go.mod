@@ -1,4 +1,4 @@
-module github.com/opskumu/helm-wrapper
+module github.com/shijianjs/helm-wrapper
 
 go 1.16
 

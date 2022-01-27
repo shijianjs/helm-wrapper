@@ -45,6 +45,10 @@ func RegisterRouter(router *gin.Engine) {
 		repositories.GET("/charts", listRepoCharts)
 		// helm repo update
 		repositories.PUT("", updateRepos)
+
+		// todo 动态新增repo
+		// helm repo add fingard http://localhost:8082/repository/fingard-helm/
+		//repositories.POST("/save")
 	}
 
 	// helm chart
