@@ -1,8 +1,8 @@
-FROM centos:7
+FROM alpine:3
 
 ENV GIN_MODE=release
 
-COPY config-example.yaml  /config.yaml
-COPY bin/helm-wrapper /helm-wrapper
+COPY config.yaml  /app/config.yaml
+COPY helm-wrapper /app/helm-wrapper
 
-CMD [ "/helm-wrapper" ]
+CMD [ "/app/helm-wrapper" ]
