@@ -1,4 +1,4 @@
-FROM golang:1.17-alpine
+FROM golang:1.17
 
 ENV GIN_MODE=release
 
